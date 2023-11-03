@@ -1,0 +1,149 @@
+/* Resetting some default styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7F7F7;
+  color: #333; /* Text color for better readability */
+}
+
+/* Improved background styling */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+/* Styling for product tiles */
+.Tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin: 3% auto;
+}
+
+.Tiles:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for product links */
+.product-link {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-link:hover {
+  background-color: #0056b3;
+}
+
+/* Header and navigation bar styling */
+header {
+  background-color: #F3A847;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.homebutton{ 
+  text-decoration: none;
+  margin-left: -95%;
+  color: #fff;
+  font-size: 26px;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+/* Product details and title styling */
+.product {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-details {
+  flex-grow: 1;
+  padding: 10px;
+  width: 70%;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  margin-bottom: 10px;
+}
+
+/* Product image styling */
+.product_image {
+  max-width: 250px; /* Adjust the width as needed */
+  max-height: 250px; /* Adjust the height as needed */
+  margin-right: 10px;
+}
+
+/* Additional styling for buttons and links */
+button, .btn {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #0056b3;
+}
+
+/* Add a subtle box shadow to cards for better aesthetics */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional styles for h3 elements */
+h3 {
+  color: #007BFF;
+}
+
+/* Add hover effect to product tiles */
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
